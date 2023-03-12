@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pritishvaidya/react-native-password-strength-meter.git"
+    "url": "git+https://github.com/joshhw/react-native-password-strength-meter.git"
   },
   "keywords": [
     "react-native",
@@ -20,12 +20,12 @@
     "password-meter",
     "react-native-password-strength-meter"
   ],
-  "author": "Pritish Vaidya ",
+  "author": "Pritish Vaidya",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pritishvaidya/react-native-password-strength-meter/issues"
+    "url": "https://github.com/joshhw/react-native-password-strength-meter/issues"
   },
-  "homepage": "https://github.com/pritishvaidya/react-native-password-strength-meter#readme",
+  "homepage": "https://github.com/joshhw/react-native-password-strength-meter#readme",
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "eslint": "^8.36.0",
