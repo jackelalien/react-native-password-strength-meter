@@ -1,4 +1,4 @@
-# react-native-password-strength-meter [![npm version](https://badge.fury.io/js/react-native-password-strength-meter.svg)](https://badge.fury.io/js/react-native-password-strength-meter) [![npm downloads](https://img.shields.io/npm/dt/react-native-password-strength-meter.svg)](https://npm-stat.com/charts.html?package=react-native-password-strength-meter&from=2018-02-17&to=2018-12-28)
+# react-native-password-strength-meter [![npm version](https://badge.fury.io/js/react-native-password-strength-meter.svg)](https://badge.fury.io/js/react-native-password-strength-meter) [![npm downloads](https://img.shields.io/npm/dt/react-native-password-strength-meter.svg)](https://npm-stat.com/charts.html?package=@joshhw/react-native-password-strength-meter)
 
 A highly customisable password strength meter implementation with minimal dependencies. This was originally forked from [pritishvaidya](https://github.com/pritishvaidya/react-native-password-strength-meter) and now updated for usage with React 18
 
