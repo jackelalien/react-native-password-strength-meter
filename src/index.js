@@ -9,7 +9,6 @@ import PropTypes from 'prop-types';
 import BarPasswordStrengthDisplay from './components/bar-password-strength-display';
 import BoxPasswordStrengthDisplay from './components/box-password-strength-display';
 import TextPasswordStrengthDisplay from './components/text-password-strength-display';
-import CircularPasswordStrengthDisplay from './components/circular-password-strength-display';
 
 // Utils
 import isReactComponent from './utils/check-react-component';
@@ -127,5 +126,4 @@ export {
   BarPasswordStrengthDisplay,
   BoxPasswordStrengthDisplay,
   TextPasswordStrengthDisplay,
-  CircularPasswordStrengthDisplay,
 };
