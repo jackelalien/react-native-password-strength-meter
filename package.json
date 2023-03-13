@@ -9,6 +9,9 @@
     "fix-lint": "yarn lint -- --fix",
     "prepush": "npm run lint"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joshhw/react-native-password-strength-meter.git"

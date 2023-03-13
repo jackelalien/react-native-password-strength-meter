@@ -41,7 +41,7 @@ A highly customisable password strength meter implementation with minimal depend
 ### Installation
 
 ```bash
-$ npm i react-native-password-strength-meter --save
+$ npm i @joshhw/react-native-password-strength-meter --save
 ```
 
 ### Basic Usage
@@ -279,4 +279,4 @@ The Password Score calculator is based on this amazing [Stackoverflow Post](http
 ## Contribution
 
 - [@pritishvaidya](mailto:pritishvaidya94@gmail.com) The main author.
-- [@Joshhw](https://github.com/Joshhw) for this current version
+- [@Joshhw](https://github.com/Joshhw) for this current version.
