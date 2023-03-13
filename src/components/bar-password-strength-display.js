@@ -43,7 +43,7 @@ class BarPasswordStrengthDisplay extends Component {
     Animated.timing(this.animatedBarWidth, {
       toValue: absoluteWidth,
       duration: 700,
-      useNativeDriver: false
+      useNativeDriver: false,
     }).start();
     return (
       <View style={[style.wrapper, wrapperStyle]}>
@@ -58,8 +58,7 @@ class BarPasswordStrengthDisplay extends Component {
         </View>
         {labelVisible && (touched || score !== 0)
           ? <Text style={[style.label, labelStyle, { color: labelColor }]}>{label}</Text>
-          : null
-        }
+          : null}
       </View>
     );
   }

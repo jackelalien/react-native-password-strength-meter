@@ -41,7 +41,7 @@ class BoxPasswordStrengthDisplay extends Component {
     const score = scorePassword(password, minLength, scoreLimit, variations);
     const { label, labelColor, activeBarColor } = calculateLevel(score, levels);
     const levelWidth = calculateLevelWidth(width, levels, boxSpacing);
-    const currentLevelIndex = levels.findIndex(level => level.label === label);
+    const currentLevelIndex = levels.findIndex((level) => level.label === label);
     return (
       <View style={[style.wrapper, wrapperStyle]}>
         <View style={[style.boxContainerWrapper]}>
@@ -51,13 +51,13 @@ class BoxPasswordStrengthDisplay extends Component {
               Animated.timing(currentAnimatedBoxWidth, {
                 toValue: levelWidth,
                 duration: 700,
-                useNativeDriver: false
+                useNativeDriver: false,
               }).start();
             } else {
               Animated.timing(currentAnimatedBoxWidth, {
                 toValue: 0,
                 duration: 700,
-                useNativeDriver: false
+                useNativeDriver: false,
               }).start();
             }
             return (
@@ -82,8 +82,7 @@ class BoxPasswordStrengthDisplay extends Component {
 
         {labelVisible && (touched || score !== 0)
           ? <Text style={[style.label, labelStyle, { color: labelColor }]}>{label}</Text>
-          : null
-        }
+          : null}
       </View>
     );
   }

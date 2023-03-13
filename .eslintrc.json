@@ -27,6 +27,7 @@
     "react/forbid-prop-types": "off",
     "class-methods-use-this": "off",
     "react/no-unused-prop-types": "warn",
+    "react/jsx-props-no-spreading": "off",
     "react/prefer-stateless-function": ["error", {"ignorePureComponents": true}],
     "react/require-default-props": "off"
   }

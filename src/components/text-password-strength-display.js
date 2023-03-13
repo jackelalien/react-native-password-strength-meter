@@ -30,8 +30,7 @@ function TextPasswordStrengthDisplay({
     <View style={[style.wrapper, wrapperStyle]}>
       {labelVisible && (touched || score !== 0)
         ? <Text style={[style.label, labelStyle, { color: labelColor }]}>{label}</Text>
-        : null
-      }
+        : null}
     </View>
   );
 }

@@ -41,15 +41,21 @@ class PasswordInputComponent extends Component {
     console.log({ levels, minLength, scoreLimit });
     const score = scorePassword(password, minLength, scoreLimit);
     const { label, labelColor, activeBarColor } = calculateLevel(score, levels);
-    this.setState({
-      password,
-      placeholderVisible: password.length === 0,
-    }, () => onChangeText(password, score, { label, labelColor, activeBarColor }));
-  }
+    this.setState(
+      {
+        password,
+        placeholderVisible: password.length === 0,
+      },
+      () => onChangeText(password, score, { label, labelColor, activeBarColor }),
+    );
+  };
 
   toggleSecureText = () => {
-    this.setState(prevState => ({ ...prevState, secureTextEntry: !prevState.secureTextEntry }));
-  }
+    this.setState((prevState) => ({
+      ...prevState,
+      secureTextEntry: !prevState.secureTextEntry,
+    }));
+  };
 
   render() {
     const {
@@ -64,7 +70,9 @@ class PasswordInputComponent extends Component {
       passwordProps,
     } = this.props;
     const { password, placeholderVisible, secureTextEntry } = this.state;
-    const image = secureTextEntry ? require('./images/eye-visible.png') : require('./images/eye-invisible.png');
+    const image = secureTextEntry
+      ? require('./images/eye-visible.png')
+      : require('./images/eye-invisible.png');
     let PasswordComponent;
     if (isReactComponent(meterType)) {
       PasswordComponent = meterType;
@@ -83,7 +91,8 @@ class PasswordInputComponent extends Component {
             style={
               placeholderVisible
                 ? [style.input, inputStyle, placeholderStyle]
-                : [style.input, inputStyle]}
+                : [style.input, inputStyle]
+            }
             value={password}
             onChangeText={this.change}
             secureTextEntry={secureTextEntry}
@@ -111,10 +120,7 @@ PasswordInputComponent.propTypes = {
   inputWrapperStyle: PropTypes.object,
   inputStyle: PropTypes.object,
   placeholderStyle: PropTypes.object,
-  meterType: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-  ]),
+  meterType: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   inputProps: PropTypes.object,
   passwordProps: PropTypes.object,
 };
