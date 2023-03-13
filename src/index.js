@@ -72,8 +72,6 @@ class PasswordInputComponent extends Component {
       PasswordComponent = BarPasswordStrengthDisplay;
     } else if (meterType === 'box') {
       PasswordComponent = BoxPasswordStrengthDisplay;
-    } else if (meterType === 'circle') {
-      PasswordComponent = CircularPasswordStrengthDisplay;
     } else {
       PasswordComponent = TextPasswordStrengthDisplay;
     }
